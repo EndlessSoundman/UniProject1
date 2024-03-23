@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .background-container {
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .content-container {
+    text-align: center;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  .icon-container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .icon-container::before {
+    content: "Business"; /* Text content for the overlay on the first image */
+    position: absolute; /* Position the text absolutely within the container */
+    top: 0; /* Place the text at the top of the container */
+    left: 0; /* Place the text at the left of the container */
+    color: white; /* Set text color (adjust for contrast) */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background (optional) */
+    padding: 5px; /* Add some padding (optional) */
+  }
+  
+  .icon-container img {
+    width: 100px;
+  }
+  
+  /* Add space after the background image */
+  .content-container {
+    margin-bottom: 500px; /* Adjust this value as needed */
+  }
+  
